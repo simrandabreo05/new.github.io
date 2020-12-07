@@ -21,10 +21,10 @@
   })();
   	
 function onUserLogin(){
-	var name=document.getElementById("name");
-	var email=document.getElementById("email");
-	var phoneno=document.getElementById("phone");
-	var Dateofbirth=document.getElementById("date");
+	var name=document.getElementById("firstname");
+	var email=document.getElementById("youremail");
+	var phoneno=document.getElementById("yourphone");
+	var Dateofbirth=document.getElementById("dateofbirth");
   	clevertap.onUserLogin.push({
  		"Site": {
    		"Name": name,   
@@ -39,10 +39,10 @@ console.log("profile created")
   	
 
 function profilePush(){
-	var name=document.getElementById("name");
-	var email=document.getElementById("email");
-	var phoneno=document.getElementById("phone");
-	var Dateofbirth=document.getElementById("date");
+	var name=document.getElementById("firstname");
+	var email=document.getElementById("youremail");
+	var phoneno=document.getElementById("yourphone");
+	var Dateofbirth=document.getElementById("dateofbirth");
 	clevertap.profile.push({
  "Site": {
    "Name":   name ,         // use the Name variable
@@ -79,19 +79,19 @@ function askForPush(){
 		<div class="form-control">
 			<h2>Sign up form</h2><p></p><br><br>
 		 <b>	<label>Name</label><p>
-			<input type="text" id="name" placeholder="Enter your Name"></p>
+			<input type="text" id="firstname" placeholder="Enter your Name"></p>
 		</div>
 		<div class="form-control">
 		 	<label>Email</label><p>
-			<input type="Email" id="email" placeholder="Enter your Email id"></p>
+			<input type="Email" id="youremail" placeholder="Enter your Email id"></p>
 		</div>
 		<div class="form-control">
 		 	<label>phone number</label><p>
-			<input type="number" id="phone" placeholder="Enter your Phone number"></p>
+			<input type="number" id="yourphone" placeholder="Enter your Phone number"></p>
 		</div>
 		<div class="form-control">
 		 	<label>Dateofbirth</label><p>
-			<input type="date" id="date" placeholder="Enter your date of birth"></p>
+			<input type="date" id="dateofbirth" placeholder="Enter your date of birth"></p>
 		</div>
 		
 		<button type="button" onclick="onUserLogin()" style=" position: fixed;  left: 46%;  top:70%;height:40px;width:110px;color: blue ;background-color: pink"> <h3>login</h3>  </button><p></p><br><br><br>
